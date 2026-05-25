@@ -1,0 +1,1 @@
+Disclamer Ensure to import Db before use located in the folder itself 'blog_platform.sql'
