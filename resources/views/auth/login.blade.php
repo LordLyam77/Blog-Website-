@@ -20,14 +20,15 @@
                placeholder="Password"
                required>
 
-        <button type="submit" class="btn btn-primary">
+        <a href="{{ route('password.request') }}"
+           style="display:block; margin-top:12px; color:#2563eb; text-decoration:none;">
+            Forgot Password?
+        </a>
+
+        <button type="submit"
+                class="btn btn-primary">
             Login
         </button>
-
-        <a href="{{ route('password.request') }}"
-   style="display:block; margin-top:10px; color:#2563eb;">
-    Forgot Password?
-     </a>
 
     </form>
 
