@@ -24,6 +24,11 @@
             Login
         </button>
 
+        <a href="{{ route('password.request') }}"
+   style="display:block; margin-top:10px; color:#2563eb;">
+    Forgot Password?
+     </a>
+
     </form>
 
 </div>
