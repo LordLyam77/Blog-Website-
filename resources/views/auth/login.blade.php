@@ -6,6 +6,12 @@
 
     <h2>Login</h2>
 
+    @if ($errors->any())
+        <div style="background:#dc2626;color:white;padding:10px;border-radius:8px;margin-bottom:15px;">
+            {{ $errors->first() }}
+        </div>
+    @endif
+
     <form method="POST" action="{{ route('login') }}">
 
         @csrf
@@ -13,6 +19,7 @@
         <input type="email"
                name="email"
                placeholder="Email"
+               value="{{ old('email') }}"
                required>
 
         <input type="password"
